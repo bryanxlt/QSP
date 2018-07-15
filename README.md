@@ -1,4 +1,4 @@
-# QST V2
+# QSP V2
 Updated Version of "Quick Start Project" for starting the front-end of a website
 project.
 
