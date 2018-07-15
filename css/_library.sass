@@ -1,0 +1,89 @@
+// QUICK CSS LIBRARY
+// - RGBA
+=rgba($r,$g,$b,$a)
+  background-color: rgba($r,$g,$b,$a)
+
+// - FONT FILE
+=font-file($font,$src)
+  @font-face
+    font-family: $font
+    src: url($src)
+
+// - TRANSITION
+=transition($seconds)
+  transition: all $seconds ease-in-out
+
+// - BORDER
+=border($size,$color)
+  border: $size solid $color
+
+=custom-border($top,$left,$right,$bottom,$color)
+  border-top: $top solid $color
+  border-left: $left solid $color
+  border-right: $right solid $color
+  border-bottom: $bottom solid $color
+
+// - RADIUS
+=border-radius($radius-size)
+  -webkit-border-radius: $radius-size
+  -moz-border-radius: $radius-size
+  border-radius: $radius-size
+
+=top-radius($radius-size)
+  -webkit-border-top-left-radius: $radius-size
+  -webkit-border-top-right-radius: $radius-size
+  -moz-border-radius-topleft: $radius-size
+  -moz-border-radius-topright: $radius-size
+  border-top-left-radius: $radius-size
+  border-top-right-radius: $radius-size
+
+=bottom-radius($radius-size)
+  -webkit-border-bottom-right-radius: $radius-size
+  -webkit-border-bottom-left-radius: $radius-size
+  -moz-border-radius-bottomright: $radius-size
+  -moz-border-radius-bottomleft: $radius-size
+  border-bottom-right-radius: $radius-size
+  border-bottom-left-radius: $radius-size
+
+// - CUSTOM RADIUS
+=custom-radius($top-left,$top-right,$bottom-left,$bottom-right)
+  -webkit-border-top-left-radius: $top-left
+  -moz-border-radius-topleft: $top-left
+  border-top-left-radius: $top-left
+  -webkit-border-top-right-radius: $top-right
+  -moz-border-radius-topright: $top-right
+  border-top-right-radius: $top-right
+  -webkit-border-bottom-left-radius: $bottom-left
+  -moz-border-radius-bottomleft: $bottom-left
+  border-bottom-left-radius: $bottom-left
+  -webkit-border-bottom-right-radius: $bottom-right
+  -moz-border-radius-bottomright: $bottom-right
+  border-bottom-right-radius: $bottom-right
+
+
+// - PADDING
+=horizontal-padding($padding-size)
+  padding-left: $padding-size
+  padding-right: $padding-size
+
+=vertical-padding($padding-size)
+  padding-top: $padding-size
+  padding-bottom: $padding-size
+
+// - MARGIN
+=horizontal-margin($margin-size)
+  margin-left: $margin-size
+  margin-right: $margin-size
+
+=vertical-margin($margin-size)
+  margin-top: $margin-size
+  margin-bottom: $margin-size
+
+// - POSITION
+=position-absolute($top,$left,$right,$bottom,$z-index)
+  position: absolute
+  top: $top
+  left: $left
+  right: $right
+  bottom: $bottom
+  z-index: $z-index
